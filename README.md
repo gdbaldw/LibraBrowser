@@ -19,12 +19,12 @@ A Block Explorer for the Libra Blockchain TestNet. See: https://librabrowser.io
 
 ## Database
 * Default config assumes a newly created [postgresql](https://wiki.postgresql.org/wiki/Main_Page) database with:
-    username: postgres
-    password: postgres
-    host: localhost
-    port: 5432
-    database name: libra_browser
-    [Please see SQLAlchemy Docs for configuration options](https://docs.sqlalchemy.org/en/13/core/engines.html)
+    > username: postgres
+    > password: postgres
+    > host: localhost
+    > port: 5432
+    > database name: libra_browser
+    > [Please see SQLAlchemy Docs for configuration options](https://docs.sqlalchemy.org/en/13/core/engines.html)
 * Alternatively, delete from config.json the line containing "sqlalchemy.url", for a simple default sqlite database in memory
 
 ## Running the project
