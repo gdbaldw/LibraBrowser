@@ -54,24 +54,6 @@ txs = Table('transactions', metadata, *columns)
 
 engine = None
 
-#with open('config.json', 'r') as f:
-#    config = json.load(f)
-#try:
-#    config = config[os.getenv("BROWSER")]
-#except:
-#    config = config["PRODUCTION"]
-#
-#if 'sqlalchemy.url' in config:
-#    engine = create_engine(config['sqlalchemy.url'])
-#else:
-#    engine = create_engine(
-#        'sqlite://',
-#        connect_args={'check_same_thread': False},
-#        poolclass = StaticPool,
-#    )
-#
-#metadata.create_all(engine)
-
 #########
 # Funcs #
 #########
