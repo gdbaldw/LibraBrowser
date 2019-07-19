@@ -25,6 +25,9 @@ A Block Explorer for the Libra Blockchain TestNet. See: https://librabrowser.io
     * port = 5432
     * database name = libra_browser
     * Please see [SQLAlchemy Docs](https://docs.sqlalchemy.org/en/13/core/engines.html) for configuration options
+* make sure that /etc/postgresql/<PGSQL_VERSION>/main/pg_hba.conf has the configuration of password, i.e. auth method md5 and not peer:
+> local   all             postgres                                md5
+* To create the DB after installing postgresql you can run: sudo -u postgres createdb libra_browser
 
 ## Running the project
 At the root project folder execute the command:
