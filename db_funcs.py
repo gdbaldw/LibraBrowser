@@ -170,7 +170,7 @@ class TxDBWorker(Thread):
                         sleep(1)
                         continue
                     if cur_ver > bver:
-                        file_path = self.db_backup_path + '_' + strftime('%Y%m%d%H%M%S') + '.gz'
+                        file_path = '{}_{}.gz'.format(self.db_backup_path, strftime('%Y%m%d%H%M%S'))
                         logger.info('saving database to {}'.format(file_path))
                         with gzip.open(file_path, 'wb') as f:
                             f.write(dumps(engine.execute(select([txs])).fetchall()))
